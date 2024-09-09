@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+@import url(styles/about.css);
+@import url(styles/home.css);
+@import url(styles/menu.css);
+@import url(styles/contact.css);
+
+
+:root{
+    --color:#f1d9a5;
+    --box-shadow:0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--color);
+    color: #fff;
+}
+
+
+html{
+    font-size: 62%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.heading h3{
+    font-size: 4rem;
+    font-weight: 300;
+    color: var(--color);
+    font-family: cursive;
+}
+
+.home{
+    background: url("images/fundo.jpg");}
+
+.sub-heading{
+    background: url(images/heading-bg.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 16rem;
+    padding-bottom: 8rem;
+}
+
+.sub-heading h1{
+    color: var(--color);
+    font-size: 4rem;
+    font-family: 'Merienda One', cursive;
+}
+
+
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #222;
+}
+
+.header .logo i{
+    color: var(--color);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: #222;
+}
+
+.header .navbar a.active{
+    color: var(--color);
+}
+
+.header .navbar a:hover{
+    color: var(--color);
+}
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border: .1rem solid var(--color);
+    color: var(--color);
+    border-radius: .5rem;
+    font-size: 2rem;
+    margin-left: .3rem;
+    cursor: pointer;
+    text-align: center;
+}
+
+.header .icons div:hover{
+    background: var(--color);
+    color: #ffffff;
+}
+
+.footer{
+    padding: 3rem 7%;
+    color: #fff8f2;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #222;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i{
+    color: var(--color);
+}
+
+.footer .box-container .box a{
+    font-size: 1.4rem;
+    color: var(--color);
+    padding: 1rem 0;
+    display: block;
+}
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+}
+
+.footer .box-container .box a i{
+    padding-right: .5rem;
+}
+
+.footer .box-container .box form input[type="email"]{
+    width: 100%;
+    padding: 1rem 1.2rem;
+    font-size: 1.6rem;
+    color: #222;
+    margin: 1rem 0;
+    border: .1rem solid var(--color);
+    border-radius: .5rem;
+    text-transform: none;
+}
+
+.footer .box-container .box form .btn{
+    background: none;
+}
+
+.footer .box-container .box form .btn:hover{
+    background: var(--color);
+}
+
+.footer .box-container .box .payment{
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.footer .credit{
+    text-align: center;
+    color: #222;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+    padding-top: 2.5rem;
+    border-top: .2rem solid rgba(0,0,0,.1);
+}
